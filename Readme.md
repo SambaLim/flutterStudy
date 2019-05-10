@@ -5,6 +5,7 @@
 - 2019.05.09 : [workspace001] Write your first Flutter app, part 1,2 
 - 2019.05.10 : [workspace002] Building Layouts Tutorial
 - 2019.05.10 : [workspace003] Adding interactivity Tutorial
+- 2019.05.10 : [workspace004] Planets Tutorial
 
 
 
@@ -19,5 +20,5 @@
 
 - Write your first Flutter app : <https://codelabs.developers.google.com/codelabs/first-flutter-app-pt1/index.html?index=..%2F..index#0>
 - Building Layouts : <https://flutter.dev/docs/development/ui/layout/tutorial>
-- Plannet : https://sergiandreplace.com//tags/planets/
+- Planet : https://sergiandreplace.com//tags/planets/
 
