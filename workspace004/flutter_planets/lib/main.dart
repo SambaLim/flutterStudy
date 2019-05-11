@@ -4,6 +4,7 @@ import 'package:flutter_planets/ui/home/HomePage.dart';
 void main() {
   runApp(MaterialApp(
     title: "Lim\'s Planets'",
+    debugShowCheckedModeBanner: false,
     home: HomePage(),
   ));
 }
