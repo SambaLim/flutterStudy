@@ -1,11 +1,18 @@
 # Flutter Study
 
+## TODO
+
+- planetCard 만들어아햠
+
+
+
 ## History
 
 - 2019.05.09 : [workspace001] Write your first Flutter app, part 1,2 
 - 2019.05.10 : [workspace002] Building Layouts Tutorial
 - 2019.05.10 : [workspace003] Adding interactivity Tutorial
 - 2019.05.10 : [workspace004] Planets Tutorial
+- 2019.05.11 : [workspace005] Planets Tutorial 002
 
 
 
