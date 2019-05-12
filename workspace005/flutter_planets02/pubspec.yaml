@@ -1,4 +1,4 @@
-name: flutter_planets
+name: flutter_planets02
 description: A new Flutter application.
 
 # The following defines the version and build number for your application.
@@ -39,11 +39,6 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-#  fonts:
-#    - family: Poppins
-#      fonts:
-#        - asset: assets/fonts/Poppins-SemiBold.ttf
-#          weight: 600
 
   # To add assets to your application, add an assets section, like this:
   # assets:
