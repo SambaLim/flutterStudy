@@ -28,12 +28,12 @@ class GradientAppBar extends StatelessWidget {
       child: new Center(
         child: new Text(
           title,
-          style: const TextStyle(
-            color: Colors.white,
-            fontFamily: 'Poppins',
-            fontWeight: FontWeight.w600,
-            fontSize: 26.0
-          )
+          style:const TextStyle(
+              color: Colors.white,
+              //fontFamily: 'Poppins',
+              fontWeight: FontWeight.w600,
+              fontSize: 26.0
+          ),
         ),
       ),
     );

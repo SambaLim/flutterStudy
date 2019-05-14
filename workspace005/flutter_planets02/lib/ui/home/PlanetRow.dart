@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class PlannetRow extends StatelessWidget {
+class PlanetRow extends StatelessWidget {
 
   final planetThumbnail = Container(
     margin: EdgeInsets.symmetric(
