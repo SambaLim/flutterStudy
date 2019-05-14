@@ -14,6 +14,23 @@ class PlanetRow extends StatelessWidget {
     )
   );
 
+  final planetCard = Container(
+    height: 124.0,
+    margin: EdgeInsets.only(left:46.0),
+    decoration: BoxDecoration(
+      color: Color(0xFF333366),
+      shape: BoxShape.rectangle,
+      borderRadius: BorderRadius.circular(8.0),
+      boxShadow: <BoxShadow>[
+        BoxShadow(
+          color: Colors.black12,
+          blurRadius: 10.0,
+          offset: Offset(0.0, 10.0),
+        )
+      ]
+    )
+  );
+
   @override
   Widget build(BuildContext context) {
     return new Container(
@@ -23,7 +40,7 @@ class PlanetRow extends StatelessWidget {
       ),
       child: Stack(
         children: <Widget>[
-          //planetCard,
+          planetCard,
           planetThumbnail,
         ]
       )
