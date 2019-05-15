@@ -9,6 +9,22 @@ class GradientAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final double statusBarHeight = MediaQuery.of(context).padding.top;
+    final baseTextStyle = TextStyle(
+      //fontFamily: 'Poppins'
+    );
+    final headerTextStyle = baseTextStyle.copyWith(
+      color: Colors.white,
+      fontSize: 18.0,
+      fontWeight: FontWeight.w600
+    );
+    final regularTextStyle = baseTextStyle.copyWith(
+        color: const Color(0xffb6b2df),
+        fontSize: 9.0,
+        fontWeight: FontWeight.w400
+    );
+    final subHeaderTextStyle = regularTextStyle.copyWith(
+      fontSize: 12.0
+    );
 
     return new Container(
       padding: new EdgeInsets.only(top: statusBarHeight),
@@ -28,12 +44,7 @@ class GradientAppBar extends StatelessWidget {
       child: new Center(
         child: new Text(
           title,
-          style:const TextStyle(
-              color: Colors.white,
-              //fontFamily: 'Poppins',
-              fontWeight: FontWeight.w600,
-              fontSize: 26.0
-          ),
+          style: headerTextStyle
         ),
       ),
     );
