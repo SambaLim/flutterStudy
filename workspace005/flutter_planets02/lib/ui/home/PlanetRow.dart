@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_planets02/model/Planets.dart';
+import 'package:flutter_planets02/text_style.dart';
 
 class PlanetRow extends StatelessWidget {
 
@@ -38,6 +39,52 @@ class PlanetRow extends StatelessWidget {
             ]
         )
     );
+
+    final planetCardContent = Container(
+      margin: EdgeInsets.fromLTRB(76.0, 16.0, 16.0, 16.0),
+      constraints: BoxConstraints.expand(),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: <Widget>[
+          Container(height: 4.0),
+          Text(
+            planet.name,
+            style: subHeaderTextStyle,
+          ),
+          Container(
+            margin: EdgeInsets.symmetric(vertical: 8.0),
+            height: 2.0,
+            width: 18.0,
+            color: Color(0xff00c6ff),
+          ),
+          Row(
+            children: <Widget>[
+              Image.asset("assets/img/ic_distance.png", height:12.0),
+              Container(
+                width: 8.0
+              ),
+              Text(
+                planet.distance,
+                style: regularTextStyle
+              ),
+            ],
+          )
+        ],
+      )
+    );
+
+    Widget _planetValue({String value, String image}) {
+      return Row(
+        children: <Widget>[
+          Image.asset(image, height: 12.0),
+          Container(width: 8.0),
+          Text(
+              planet.gravity,
+              style:regularTextStyle
+          )
+        ],
+      );
+    }
 
     return new Container(
       margin: const EdgeInsets.symmetric(
