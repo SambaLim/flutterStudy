@@ -69,7 +69,7 @@ class PlanetRow extends StatelessWidget {
                 Expanded(
                     child: _planetValue(
                         value: planet.gravity,
-                        image: 'assets/img/ic_graviy.png'
+                        image: 'assets/img/ic_gravity.png'
                     )
                 ),
               ],
