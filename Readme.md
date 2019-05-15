@@ -14,6 +14,7 @@
 - 2019.05.10 : [workspace004] Planets Tutorial
 - 2019.05.11 : [workspace005] Planets Tutorial 002
 - 2019.05.14 : [workspace005] Add Planet Model
+- 2019.05.15 : [workspace005] Add Planet Card Content
 
 
 
