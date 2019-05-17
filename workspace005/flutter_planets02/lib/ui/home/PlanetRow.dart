@@ -17,11 +17,14 @@ class PlanetRow extends StatelessWidget {
             vertical: 16.0
         ),
         alignment: FractionalOffset.centerLeft,
-        child: new Image(
-            image: new AssetImage(planet.image),
-            height: 92.0,
-            width: 92.0
-        )
+        child: Hero(
+            tag: "planet-hero-${planet.id}",
+            child: Image(
+                image: new AssetImage(planet.image),
+                height: 92.0,
+                width: 92.0
+            )
+        ),
     );
 
     Widget _planetValue({String value, String image}) {

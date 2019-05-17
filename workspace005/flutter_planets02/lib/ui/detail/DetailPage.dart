@@ -11,16 +11,17 @@ class DetailPage extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Plannet Detail")
-      ),
       body: Container(
+        color: Color(0xFF736AB7),
         constraints: BoxConstraints.expand(),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(planet.name),
-            Image.asset(planet.image, width:96.0, height: 96.0)
+            Hero(
+              tag: "planet-hero-${planet.id}",
+              child: Image.asset(planet.image, width:96.0, height: 96.0)
+            )
           ],
         )
       )
