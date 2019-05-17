@@ -62,6 +62,6 @@ List<Planet> planets = [
     distance: "54.6m Km",
     gravity: "3.7 m/s",
     description: "Loren ipsum...",
-    image: "assets/img/mecury.png",
+    image: "assets/img/mercury.png",
   ),
 ];
