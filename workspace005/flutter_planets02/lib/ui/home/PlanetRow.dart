@@ -97,16 +97,19 @@ class PlanetRow extends StatelessWidget {
     );
 
 
-    return new Container(
-      margin: const EdgeInsets.symmetric(
-        vertical: 16.0,
-        horizontal: 24.0,
-      ),
-      child: Stack(
-        children: <Widget>[
-          planetCard,
-          planetThumbnail
-        ]
+    return GestureDetector(
+      onTap: () => Navigator.pushNamed(context, '/detail'),
+        child: new Container(
+          margin: const EdgeInsets.symmetric(
+            vertical: 16.0,
+            horizontal: 24.0,
+          ),
+          child: Stack(
+              children: <Widget>[
+                planetCard,
+                planetThumbnail
+              ]
+          )
       )
     );
   }
