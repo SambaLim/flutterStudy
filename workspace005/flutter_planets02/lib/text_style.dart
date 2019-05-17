@@ -5,7 +5,7 @@ final baseTextStyle = TextStyle(
 );
 final headerTextStyle = baseTextStyle.copyWith(
     color: Colors.white,
-    fontSize: 18.0,
+    fontSize: 20.0,
     fontWeight: FontWeight.w600
 );
 final regularTextStyle = baseTextStyle.copyWith(
