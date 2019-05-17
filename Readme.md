@@ -15,7 +15,7 @@
 - 2019.05.11 : [workspace005] Planets Tutorial 002
 - 2019.05.14 : [workspace005] Add Planet Model
 - 2019.05.15 : [workspace005] Add Planet Card Content
-- 2019.05.17 : [workspace005] List Planet Card Finished
+- 2019.05.17 : [workspace005] List Planet Card Finished (CustomScrollView, Slivers)
 
 
 
