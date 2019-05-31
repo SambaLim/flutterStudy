@@ -14,17 +14,23 @@ class DetailPage extends StatelessWidget{
       body: Container(
         color: Color(0xFF736AB7),
         constraints: BoxConstraints.expand(),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+        child: Stack(
           children: <Widget>[
-            Text(planet.name),
-            Hero(
-              tag: "planet-hero-${planet.id}",
-              child: Image.asset(planet.image, width:96.0, height: 96.0)
-            )
+            _getBackground()
           ],
         )
       )
     );
   }
+
+  Container _getBackground() {
+    return Container(
+      child: Image.network(planet.image,
+      fit: BoxFit.cover,
+      height: 300.0,
+      ),
+      constraints: BoxConstraints.expand(height: 300.0),
+    );
+  }
+
 }
