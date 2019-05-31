@@ -16,7 +16,8 @@ class DetailPage extends StatelessWidget{
         constraints: BoxConstraints.expand(),
         child: Stack(
           children: <Widget>[
-            _getBackground()
+            _getBackground(),
+            _getGradient()
           ],
         )
       )
@@ -33,4 +34,21 @@ class DetailPage extends StatelessWidget{
     );
   }
 
+  Container _getGradient() {
+    return Container(
+      margin: EdgeInsets.only(top: 190.0),
+      height: 110.0,
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+            colors: <Color>[
+              Color(0x00736AB7),
+              Color(0xFF736AB7)
+            ],
+          stops: [0.0, 0.9],
+          begin: const FractionalOffset(0.0, 0.0),
+          end: const FractionalOffset(0.0, 1.0)
+        )
+      ),
+    );
+  }
 }
