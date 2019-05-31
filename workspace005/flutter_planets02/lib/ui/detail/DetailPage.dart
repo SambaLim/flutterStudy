@@ -25,7 +25,7 @@ class DetailPage extends StatelessWidget{
 
   Container _getBackground() {
     return Container(
-      child: Image.network(planet.image,
+      child: Image.network(planet.picture,
       fit: BoxFit.cover,
       height: 300.0,
       ),
