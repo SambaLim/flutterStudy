@@ -51,4 +51,13 @@ class DetailPage extends StatelessWidget{
       ),
     );
   }
+
+  Widget _getContent() {
+    return ListView(
+      padding: EdgeInsets.fromLTRB(0.0, 72.0, 0.0, 32.0),
+      children: <Widget>[
+
+      ],
+    );
+  }
 }

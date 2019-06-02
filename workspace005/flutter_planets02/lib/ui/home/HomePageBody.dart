@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_planets02/ui//home/PlanetRow.dart';
+import 'package:flutter_planets02/ui//home/PlanetSummary.dart';
 import 'package:flutter_planets02/model/Planets.dart';
 
 class HomePageBody extends StatelessWidget {
@@ -15,7 +15,7 @@ class HomePageBody extends StatelessWidget {
                 padding: const EdgeInsets.symmetric(vertical: 24.0),
                 sliver: SliverFixedExtentList(
                     delegate: SliverChildBuilderDelegate(
-                          (context, index) => new PlanetRow(planets[index]),
+                          (context, index) => new PlanetSummary(planets[index]),
                       childCount: planets.length,
                     ),
                     itemExtent: 152.0
